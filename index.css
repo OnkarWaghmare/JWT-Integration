@@ -1,0 +1,17 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+}
+.field-container {
+  display: flex;
+  justify-content: center;
+}
+#log-in-btn,
+#protected-btn {
+  margin: 10px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: lightskyblue;
+  border: 1px solid gray;
+  border-radius: 5px;
+}

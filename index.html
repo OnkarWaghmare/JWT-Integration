@@ -4,9 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" , href="./index.css" />
   </head>
   <body>
-    <h1>JWT Integrations</h1>
+    <h1>JWT Integration</h1>
+    <div class="auth-container">
+      <div>
+        <h2>Authenticate User</h2>
+        <div>
+          <p>User Name</p>
+          <div class="field-container">
+            <input id="username" value="" />
+          </div>
+        </div>
+        <div>
+          <p>Password</p>
+          <div class="field-container">
+            <input id="password" value="" />
+          </div>
+        </div>
+        <div class="field-container">
+          <button id="log-in-btn">Log In</button>
+        </div>
+        <div class="field-container">
+          <button id="protected-btn">Try protected route</button>
+        </div>
+
+        <p class="output-msg"></p>
+      </div>
+    </div>
     <script type="module" src="./index.js"></script>
   </body>
 </html>

@@ -45,8 +45,10 @@ app.post("/login", (req, res) => {
 
 // Middleware to verify JWT
 const authenticateToken = (req, res, next) => {
+  console.log("tokkk");
   const authHeader = req.headers["authorization"];
   const token = authHeader && authHeader.split(" ")[1];
+  console.log("tok", token);
 
   if (!token) {
     return res.status(401).json({ message: "Access token required" });
